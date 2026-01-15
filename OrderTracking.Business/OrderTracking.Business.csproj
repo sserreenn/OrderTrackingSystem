@@ -6,4 +6,14 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="8.1.1" />
+    <PackageReference Include="FluentValidation" Version="8.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\OrderTracking.Core\OrderTracking.Core.csproj" />
+    <ProjectReference Include="..\OrderTracking.DataAccess\OrderTracking.DataAccess.csproj" />
+  </ItemGroup>
+
 </Project>
