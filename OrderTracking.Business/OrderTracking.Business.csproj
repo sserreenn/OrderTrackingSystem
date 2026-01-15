@@ -17,9 +17,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mapping\" />
     <Folder Include="Exceptions\" />
-    <Folder Include="Validation\" />
     <Folder Include="Services\Abstarct\" />
     <Folder Include="Services\Concreate\" />
   </ItemGroup>
