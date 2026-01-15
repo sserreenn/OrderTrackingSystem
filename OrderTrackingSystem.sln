@@ -3,7 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderTracking.Core", "OrderTracking.Core\OrderTracking.Core.csproj", "{5118FC4C-29B1-4FA2-90F4-5D21223E3EEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderTracking.DataAccess", "OrderTracking.DataAccess\OrderTracking.DataAccess.csproj", "{667330B1-9808-4496-A294-8DC5C8391B42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderTracking.Business", "OrderTracking.Business\OrderTracking.Business.csproj", "{4EFD1FFE-218E-4E31-B0B6-093D03CABBC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderTracking.API", "OrderTracking.API\OrderTracking.API.csproj", "{D7971FAD-F4EB-492B-8254-0972E917CE3C}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5118FC4C-29B1-4FA2-90F4-5D21223E3EEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5118FC4C-29B1-4FA2-90F4-5D21223E3EEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5118FC4C-29B1-4FA2-90F4-5D21223E3EEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5118FC4C-29B1-4FA2-90F4-5D21223E3EEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{667330B1-9808-4496-A294-8DC5C8391B42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{667330B1-9808-4496-A294-8DC5C8391B42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{667330B1-9808-4496-A294-8DC5C8391B42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{667330B1-9808-4496-A294-8DC5C8391B42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EFD1FFE-218E-4E31-B0B6-093D03CABBC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EFD1FFE-218E-4E31-B0B6-093D03CABBC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EFD1FFE-218E-4E31-B0B6-093D03CABBC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EFD1FFE-218E-4E31-B0B6-093D03CABBC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7971FAD-F4EB-492B-8254-0972E917CE3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7971FAD-F4EB-492B-8254-0972E917CE3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7971FAD-F4EB-492B-8254-0972E917CE3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7971FAD-F4EB-492B-8254-0972E917CE3C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
