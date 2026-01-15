@@ -1,6 +1,7 @@
 ﻿namespace OrderTracking.Core.DTOs.Customer;
 
-public record CreateCustomerDto(
-    string Name, 
-    string Email
-    );
+public class CreateCustomerDto
+{
+    public string Name { get; set; } = null!;
+    public string Email { get; set; } = null!;
+}

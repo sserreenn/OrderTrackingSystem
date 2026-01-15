@@ -16,4 +16,9 @@ public class AppDbContext : DbContext
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
         base.OnModelCreating(modelBuilder);
     }
+
+    protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+    {
+        optionsBuilder.UseSqlServer("Server=LAPTOP-GGGALE7Q;Initial Catalog=OrderTrackingDb; Integrated Security=True;Encrypt=True; TrustServerCertificate=True; MultipleActiveResultSets=True;");
+    }
 }

@@ -1,5 +1,6 @@
 ﻿namespace OrderTracking.Core.DTOs.Order;
-public record CreateOrderDto(
-    int CustomerId, 
-    List<OrderItemDto> OrderItems
-    );
+public class CreateOrderDto
+{
+    public int CustomerId { get; set; }
+    public List<OrderItemDto> OrderItems { get; set; } = new();
+}

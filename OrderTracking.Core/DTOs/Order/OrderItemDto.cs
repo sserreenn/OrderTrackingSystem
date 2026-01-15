@@ -1,7 +1,8 @@
 ﻿namespace OrderTracking.Core.DTOs.Order;
 
-public record OrderItemDto(
-    string ProductName, 
-    int Quantity, 
-    decimal UnitPrice
-    );
+public class OrderItemDto
+{
+    public string ProductName { get; set; } = null!;
+    public int Quantity { get; set; }
+    public decimal UnitPrice { get; set; }
+}

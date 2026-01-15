@@ -7,19 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="8.1.1" />
-    <PackageReference Include="FluentValidation" Version="8.1.1" />
+    <PackageReference Include="AutoMapper" Version="11.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+    <PackageReference Include="FluentValidation" Version="11.9.2" />
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="11.9.2" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\OrderTracking.Core\OrderTracking.Core.csproj" />
     <ProjectReference Include="..\OrderTracking.DataAccess\OrderTracking.DataAccess.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Exceptions\" />
-    <Folder Include="Services\Abstarct\" />
-    <Folder Include="Services\Concreate\" />
   </ItemGroup>
 
 </Project>

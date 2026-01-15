@@ -16,7 +16,17 @@ public class MappingProfile : Profile
         CreateMap<CreateOrderDto, Order>();
         CreateMap<OrderItemDto, OrderItem>().ReverseMap();
 
-        // Listeleme için Customer Name'i otomatik eşleyelim
+        CreateMap<Order, OrderDto>()
+       .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status.ToString()))
+       .ForMember(dest => dest.OrderItems, opt => opt.MapFrom(src => src.OrderItems));
+
+        CreateMap<Order, OrderListDto>()
+            .ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.Name))
+            .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status.ToString()));
+
+        // OrderItem Mappings
+        CreateMap<OrderItem, OrderItemDto>().ReverseMap();
+
         CreateMap<Order, OrderListDto>()
             .ForMember(dest => dest.CustomerName, opt => opt.MapFrom(src => src.Customer.Name))
             .ForMember(dest => dest.Status, opt => opt.MapFrom(src => src.Status.ToString()));
